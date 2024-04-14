@@ -4,7 +4,7 @@ from drf_spectacular.views import SpectacularRedocView, SpectacularSwaggerView, 
 from core.views import health_check, view1, view2, index
 
 urlpatterns = [
-    path("admin", admin.site.urls),
+    path("admin/", admin.site.urls),
     path('users', include('users.urls')),
     path('', index, name='index'),
     path('button1', view1, name='view1'),
